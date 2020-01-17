@@ -14,14 +14,11 @@ public class Triangle {
         return base;
     }
 
-    public double findHeight() {
-        int slantHeight = point2.calcDistance(point2, point3);
-
-        int height = (slantHeight * slantHeight) - (findBase() * findBase());
-        return Math.sqrt(height);
+    public double () {
+        
     }
 
     public double area() {
-        return (findHeight() * findBase())/2;
+        return ( * findBase())/2;
     }
 }
