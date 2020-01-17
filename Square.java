@@ -40,6 +40,12 @@ public class Square {
         if (y2Bound2 > yBound1 && y2Bound2 < yBound2 && x2Bound2 > xBound1 && x2Bound2 < xBound2 ) {
             return true;
         }
+        if (y2Bound2 > yBound1 && y2Bound2 < yBound2 && x2Bound1 > xBound1 && x2Bound1 < xBound2 ) {
+            return true;
+        }
+        if (y2Bound1 > yBound1 && y2Bound1 < yBound2 && x2Bound2 > xBound1 && x2Bound2 < xBound2 ) {
+            return true;
+        }
         return false;
 
 
