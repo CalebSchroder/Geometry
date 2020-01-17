@@ -9,13 +9,13 @@ public class Square {
         this.p2 = p2;
     }
 
-    public double calcPerimeter(Point p1, Point p2) {
+    public double perimeter(Point p1, Point p2) {
         double distance = Point.calcDistance(p1, p2);
         perimiter =  distance * 4;
         return perimiter;
     }
 
-    public double calcArea(Point p1, Point p2) {
+    public double area(Point p1, Point p2) {
         double distance = Point.calcDistance(p1, p2);
         area =  distance * distance;
         return area;
