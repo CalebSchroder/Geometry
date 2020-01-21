@@ -48,6 +48,7 @@ public class Square {
         if (p1 > p2 && p1 < p3 && p4 > p5 && p4 < p6) {
             return true;
         }
+        return false;
 
     }
 
