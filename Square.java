@@ -34,23 +34,21 @@ public class Square {
         x2Bound1 = sq2.p1.getX();
         x2Bound2 = sq2.p2.getX();
 
-        if (y2Bound1 > yBound1 && y2Bound1 < yBound2 && x2Bound1 > xBound1 && x2Bound1 < xBound2) {
-            return true;
-        } 
-        if (y2Bound2 > yBound1 && y2Bound2 < yBound2 && x2Bound2 > xBound1 && x2Bound2 < xBound2 ) {
-            return true;
-        }
-        if (y2Bound2 > yBound1 && y2Bound2 < yBound2 && x2Bound1 > xBound1 && x2Bound1 < xBound2 ) {
-            return true;
-        }
-        if (y2Bound1 > yBound1 && y2Bound1 < yBound2 && x2Bound2 > xBound1 && x2Bound2 < xBound2 ) {
+        if (cornerOverlap(y2Bound1, yBound1, yBound2, x2Bound1, xBound1,xBound2) || 
+        cornerOverlap(y2bound2, ybound1, ybound2, x2bound2, xbound1, xbound2) || 
+        cornerOverlap(y2Bound2, yBound1, yBound2, x2Bound1, xBound1, xBound2) || 
+        cornerOverlap(y2Bound1, yBound1, yBound2, x2Bound2, xBound1,xBound2)) {
             return true;
         }
         return false;
 
-
     }
 
-    
+    public boolean cornerOverlap(int p1, int p2, int p3, int p4,int p5, int p6) {
+        if (p1 > p2 && p1 < p3 && p4 > p5 && p4 < p6) {
+            return true;
+        }
+
+    }
 
 }
