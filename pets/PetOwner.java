@@ -13,4 +13,24 @@ public class PetOwner {
         }
         return false;
     }
+
+    public petCat() {
+        marlee.setPetted(true);
+    }
+    public petDog() {
+        bob.setPetted(true);
+    }
+    public feedCat() {
+        marlee.setFed(true);
+    }
+    public feedDog() {
+        bob.setHungry(false);
+    }
+    public walkCat() {
+        marlee.setWalk(true);
+    }
+    public walkDog() {
+        bob.setWalked(true);
+    }
+    
 }

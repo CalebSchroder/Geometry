@@ -24,6 +24,15 @@ public class Dog {
     public boolean getPetted() {
         return petted;
     }
+    public setPetted(boolean petted) {
+        this.petted = petted;
+    }
+    public setHungry(boolean hungry) {
+        this.hungry = hungry;
+    }
+    public setWalked(boolean walked) {
+        this.walked = walked;
+    }
 
     public String isHappy() {
         if (!getHungry() && getWalked() && getPetted()) {
