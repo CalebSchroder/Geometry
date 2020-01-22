@@ -1,15 +1,7 @@
-public class Dog {
-
-    private String name;
-    private boolean hungry;
-    private boolean walked;
-    private boolean petted;
-
-    public Dog(String name, boolean hungry, boolean walked, boolean petted) {
-        this.name = name;
-        this.hunger = hunger;
-        this.walked = walked;
-        this.petted = petted;
+public class Dog extends Pets {
+    
+    public Dog(String name) {
+        super(name);
     }
 
     public String getName() {
