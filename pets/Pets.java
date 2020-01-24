@@ -3,7 +3,7 @@ public class Pets {
 
     private boolean isFed;
     private boolean isWalked;
-    private boolean isPetted;
+    private int isPetted;
 
     public Pets(String name) {
         this.name = name;
@@ -18,7 +18,29 @@ public class Pets {
     }
 
     public void petted() {
-        this.isPetted = true;
+        this.isPetted += 1;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean getFed() {
+        return isFed;
+    }
+    public boolean getWalked() {
+        return isWalked;
+    }
+    public int getPetted() {
+        return isPetted;
+    }
+
+    public String isHappy() {
+        if (isFed  && isWalked && isPetted) {
+            return "WOOF!";
+        }
+        return "woof";
+
     }
     
 
