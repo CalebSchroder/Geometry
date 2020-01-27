@@ -1,5 +1,5 @@
 public class PetOwner {
-    private Pets[] pets = new Pets[];
+    private Pet[] pets = new Pet[];
 
     public PetOwner (Dog bob, Cat marlee) {
         this.Dog = Dog;
