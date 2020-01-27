@@ -1,8 +1,8 @@
-public class Yorkie extends Pets {
+public class Yorkie extends Pet {
 
 
 
-    public Yorkie() {
+    public Yorkie(String name) {
         super(name);
     }
 

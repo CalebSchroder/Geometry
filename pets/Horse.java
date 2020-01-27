@@ -1,11 +1,11 @@
-public class Horse extends Pets {
+public class Horse extends Pet {
 
     private boolean isBrushed;
     private boolean isRidden;
 
 
 
-    public Horse() {
+    public Horse(String name) {
         super(name);
     }
 

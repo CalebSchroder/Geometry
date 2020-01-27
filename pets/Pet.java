@@ -1,4 +1,4 @@
-public class Pets {
+public class Pet {
     private String name;
 
     private boolean isFed;

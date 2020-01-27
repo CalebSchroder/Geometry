@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class TalkingCat extends Pets {
+public class TalkingCat extends Pet {
 
     Random rand = new Random();
     private String[] compliments = new String[5];
@@ -8,7 +8,7 @@ public class TalkingCat extends Pets {
 
 
 
-    public TalkingCat() {
+    public TalkingCat(String name) {
         super(name);
     }
 
