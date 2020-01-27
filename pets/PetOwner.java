@@ -5,13 +5,6 @@ public class PetOwner {
         this.pets = pets;
     }
 
-    public boolean isHappy() {
-        if (bob.isHappy().equals("WOOF!") && marlee.isHappy().equals("meow")) {
-            return true;
-        }
-        return false;
-    }
-
     public void petting(Pet pet) {
         pet.petted();
     }
@@ -21,5 +14,10 @@ public class PetOwner {
     public void walk(Pet pet) {
         pet.walk();
     }
-    
+    public void grooming(Horse horse) {
+        horse.brush();
+    }
+    public void riding(Horse horse) {
+        horse.ride();
+    }    
 }
