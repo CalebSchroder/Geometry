@@ -5,7 +5,7 @@ public class Pet {
     private boolean isWalked;
     private int isPetted;
 
-    public Pets(String name) {
+    public Pet(String name) {
         this.name = name;
     }
 
@@ -36,7 +36,7 @@ public class Pet {
     }
 
     public String isHappy() {
-        if (isFed  && isWalked && isPetted) {
+        if (isFed  && isWalked && isPetted >= 1) {
             return "WOOF!";
         }
         return "woof";

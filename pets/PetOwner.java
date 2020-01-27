@@ -1,9 +1,8 @@
 public class PetOwner {
     private Pet[] pets = new Pet[];
 
-    public PetOwner (Dog bob, Cat marlee) {
-        this.Dog = Dog;
-        this.Dog = Dog;
+    public PetOwner (Pet[] pets) {
+        this.pets = pets;
     }
 
     public boolean isHappy() {
@@ -13,23 +12,14 @@ public class PetOwner {
         return false;
     }
 
-    public petCat() {
-        marlee.setPetted(true);
+    public void petting(Pet pet) {
+        pet.petted();
     }
-    public petDog() {
-        bob.setPetted(true);
+    public void feed(Pet pet) {
+        pet.feed();
     }
-    public feedCat() {
-        marlee.setFed(true);
-    }
-    public feedDog() {
-        bob.setHungry(false);
-    }
-    public walkCat() {
-        marlee.setWalk(true);
-    }
-    public walkDog() {
-        bob.setWalked(true);
+    public void walk(Pet pet) {
+        pet.walk();
     }
     
 }
