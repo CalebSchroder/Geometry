@@ -1,5 +1,5 @@
 public class PetOwner {
-    private Pet[] pets = new Pet[];
+    private Pet[] pets = new Pet[10];
 
     public PetOwner (Pet[] pets) {
         this.pets = pets;
@@ -19,5 +19,20 @@ public class PetOwner {
     }
     public void riding(Horse horse) {
         horse.ride();
-    }    
+    }
+    
+    public boolean isHappy() {
+        int check = 0;
+        for (int i = 0; i < pets.length; i ++) {
+            if (Pets[i].isHappy()) {
+                check ++;
+            }
+        }
+        if (check == pets.length) {
+            return true;
+        }
+        return false;
+
+
+    }
 }
