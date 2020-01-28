@@ -1,5 +1,5 @@
 public class PetOwner {
-    private Pet[] pets = new Pet[10];
+    Pet[] pets;
 
     public PetOwner (Pet[] pets) {
         this.pets = pets;
